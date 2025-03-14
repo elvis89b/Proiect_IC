@@ -19,8 +19,8 @@ Import/Export (PDF/Excel): Export meal plans and shopping lists
 More (hopefully not less) depending on creativity and available time
 
 + Technologies to be used:
-Frontend -> React
-Backend -> ASP.NET
-Database -> SQL
+Frontend -> React;
+Backend -> ASP.NET;
+Database -> SQL;
 
 Both feature ideas and technologies were chosen in a meeting(during a course) with both teammates, shared ideas!
