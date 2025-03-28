@@ -4,6 +4,12 @@ import './Login.css';
 
 function Login() {
   return (
+    <>
+      <header className="signup-header">
+        <img src="/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+        <h1 className="signup-header-title">Bistr-O-Byte</h1>
+      </header>
+
     <div className="login-container">
       <div className="login-form-container">
         <h2 className="login-title">Sign In</h2>
@@ -43,6 +49,7 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 

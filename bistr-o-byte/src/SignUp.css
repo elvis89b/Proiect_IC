@@ -1,13 +1,41 @@
 .signup-container {
     min-height: 100vh;
-    background-color: #e6f7ff;
+    background-color: #cce6ff;
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: column;
+    align-items: center;
+  }
+  .signup-content {
+    flex: 1; /* Ocupă tot spațiul disponibil sub header */
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
+}
+    .signup-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #3388ff;
+      justify-content: flex-start; 
+      padding: 5px 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      height: 50px;
+      margin-bottom: 20px; 
+    }
+
+    .signup-logo {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .signup-header-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    } 
   .signup-form-container {
-    background-color: #fff;
+    background-color: #e3eef9;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 2rem;

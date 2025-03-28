@@ -1029,23 +1029,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\elvis\\.nuget\\packages\\": {},
+    "C:\\Users\\Andreea\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.csproj",
-      "packagesPath": "C:\\Users\\elvis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\obj\\",
+      "projectPath": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.csproj",
+      "packagesPath": "C:\\Users\\Andreea\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\elvis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andreea\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1071,8 +1071,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -1106,7 +1105,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
