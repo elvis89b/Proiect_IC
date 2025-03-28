@@ -1,12 +1,48 @@
-import React from 'react';
-import './SignUp.css'; // Importă fișierul CSS
+import React, { useState } from 'react';
+import './SignUp.css';
 
 function SignUp() {
+  const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [repeatPassword, setRepeatPassword] = useState('');
+
+  const handleSignUp = async () => {
+    // Validare simplă: verifică dacă parolele se potrivesc
+    if (password !== repeatPassword) {
+      alert("Passwords do not match!");
+      return;
+    }
+
+    // Creează obiectul ce va fi trimis la API
+    const data = { username, email, password, repeatPassword };
+
+    try {
+      const response = await fetch("http://localhost:5062/api/auth/register", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        alert("User registered successfully!");
+        // Redirecționare către pagina de Login
+        window.location.href = "/login";
+      } else {
+        const errorData = await response.json();
+        alert("Registration failed: " + (errorData.message || "Unknown error."));
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("An error occurred during registration.");
+    }
+  };
+
   return (
     <div className="signup-container">
       <div className="signup-form-container">
         <h2 className="signup-title">Sign Up</h2>
-        <form className="signup-form">
+        <form className="signup-form" onSubmit={(e) => e.preventDefault()}>
           <div className="signup-form-group">
             <label htmlFor="username">Username</label>
             <input
@@ -14,6 +50,8 @@ function SignUp() {
               id="username"
               name="username"
               placeholder="Enter your username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </div>
 
@@ -24,6 +62,8 @@ function SignUp() {
               id="email"
               name="email"
               placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
@@ -34,6 +74,8 @@ function SignUp() {
               id="password"
               name="password"
               placeholder="Enter your password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
 
@@ -44,16 +86,19 @@ function SignUp() {
               id="repeatPassword"
               name="repeatPassword"
               placeholder="Repeat your password"
+              value={repeatPassword}
+              onChange={(e) => setRepeatPassword(e.target.value)}
             />
           </div>
 
-          <button type="button" className="signup-button">
+          <button className="signup-button" type="button" onClick={handleSignUp}>
             Sign Up
           </button>
         </form>
 
         <div className="signup-footer">
-          Already have an account? <a href="/login">Log In</a>
+          Already have an account?{" "}
+          <a href="/login">Log In</a>
         </div>
       </div>
     </div>
