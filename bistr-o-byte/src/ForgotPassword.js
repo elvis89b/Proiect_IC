@@ -4,6 +4,13 @@ import './ForgotPassword.css';
 
 function ForgotPassword() {
   return (
+    <>
+      {/* Header-ul cu logo-ul si titlul */}
+      <header className="signup-header">
+        <img src="/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+        <h1 className="signup-header-title">Bistr-O-Byte</h1>
+      </header>
+
     <div className="forgot-password-container">
       <div className="forgot-password-form-container">
         <h2 className="forgot-password-title">Find your account</h2>
@@ -25,13 +32,14 @@ function ForgotPassword() {
               Cancel
             </Link>
 
-            <button type="button" className="search-button">
-              Search
-            </button>
+            <Link to="/reset-password" className="search-button">
+               Search
+            </Link>
           </div>
         </form>
       </div>
     </div>
+    </>
   );
 }
 

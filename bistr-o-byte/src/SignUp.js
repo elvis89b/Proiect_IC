@@ -39,7 +39,12 @@ function SignUp() {
   };
 
   return (
+    
     <div className="signup-container">
+      <header className="signup-header">
+        <img src="/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+        <h1 className="signup-header-title">Bistr-O-Byte</h1>
+      </header>
       <div className="signup-form-container">
         <h2 className="signup-title">Sign Up</h2>
         <form className="signup-form" onSubmit={(e) => e.preventDefault()}>
@@ -102,6 +107,7 @@ function SignUp() {
         </div>
       </div>
     </div>
+  
   );
 }
 
