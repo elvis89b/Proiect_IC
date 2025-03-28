@@ -1,13 +1,12 @@
 import React from 'react';
 import './SignUp.css'; 
-/*import logo from '../public/logo1.png';*/
 
 function SignUp() {
   return (
     
     <div className="signup-container">
       <header className="signup-header">
-        <img src="/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
         <h1 className="signup-header-title">Bistr-O-Byte</h1>
       </header>
       <div className="signup-form-container">
@@ -53,9 +52,11 @@ function SignUp() {
             />
           </div>
 
-          <button type="button" className="signup-button">
-            Sign Up
-          </button>
+          
+            <button type="button" className="signup-button">
+              Sign up
+            </button>
+         
         </form>
 
         <div className="signup-footer">

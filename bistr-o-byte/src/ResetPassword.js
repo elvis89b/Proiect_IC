@@ -9,7 +9,7 @@ function ResetPassword() {
     <>
       {/* Header-ul cu logo-ul si titlul */}
       <header className="signup-header">
-        <img src="/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
         <h1 className="signup-header-title">Bistr-O-Byte</h1>
       </header>
 
