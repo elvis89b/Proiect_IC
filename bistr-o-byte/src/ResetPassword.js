@@ -30,7 +30,7 @@ function ResetPassword() {
           </div>
           <div className="reset-password-buttons">
             <Link to="/login" className="cancel-button">Cancel</Link>
-            <button type="button" className="done-button">Done</button>
+            <Link to="/login" className="done-button">Done</Link>
           </div>
         </form>
       </div>

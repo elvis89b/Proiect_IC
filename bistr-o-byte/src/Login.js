@@ -35,7 +35,7 @@ function Login() {
           </div>
 
           <button className="login-button" type="button">
-            LOGIN
+            <Link to="/homepage">LOGIN</Link>
           </button>
         </form>
 
