@@ -42,7 +42,7 @@ function SignUp() {
     
     <div className="signup-container">
       <header className="signup-header">
-        <img src="/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
         <h1 className="signup-header-title">Bistr-O-Byte</h1>
       </header>
       <div className="signup-form-container">
