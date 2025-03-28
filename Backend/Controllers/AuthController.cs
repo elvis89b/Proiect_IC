@@ -19,9 +19,22 @@ namespace Backend.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)
         {
-            if (model == null || model.Password != model.RepeatPassword)
+            if (model == null)
             {
-                return BadRequest("Invalid data or passwords do not match.");
+                return BadRequest(new { message = "Invalid registration data." });
+            }
+
+            if (string.IsNullOrWhiteSpace(model.Username) ||
+                string.IsNullOrWhiteSpace(model.Email) ||
+                string.IsNullOrWhiteSpace(model.Password) ||
+                string.IsNullOrWhiteSpace(model.RepeatPassword))
+            {
+                return BadRequest(new { message = "All fields are required." });
+            }
+
+            if (model.Password != model.RepeatPassword)
+            {
+                return BadRequest(new { message = "Passwords do not match." });
             }
 
             var existingUser = await _context.Users

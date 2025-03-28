@@ -7,7 +7,7 @@
     align-items: center;
   }
   .signup-content {
-    flex: 1; /* Ocupă tot spațiul disponibil sub header */
+    flex: 1; 
     display: flex;
     justify-content: center;
     align-items: center;

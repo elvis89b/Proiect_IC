@@ -8,13 +8,17 @@ function SignUp() {
   const [repeatPassword, setRepeatPassword] = useState('');
 
   const handleSignUp = async () => {
-    // Validare simplă: verifică dacă parolele se potrivesc
+
+    if (!username.trim() || !email.trim() || !password || !repeatPassword) {
+      alert("All fields are required.");
+      return;
+    }
+
     if (password !== repeatPassword) {
       alert("Passwords do not match!");
       return;
     }
 
-    // Creează obiectul ce va fi trimis la API
     const data = { username, email, password, repeatPassword };
 
     try {
@@ -26,7 +30,6 @@ function SignUp() {
 
       if (response.ok) {
         alert("User registered successfully!");
-        // Redirecționare către pagina de Login
         window.location.href = "/login";
       } else {
         const errorData = await response.json();

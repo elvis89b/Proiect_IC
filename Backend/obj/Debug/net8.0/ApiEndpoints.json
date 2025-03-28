@@ -14,15 +14,5 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Backend.Controllers.TestController",
-    "Method": "GetHello",
-    "RelativePath": "api/Test",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

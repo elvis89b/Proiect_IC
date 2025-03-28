@@ -5,7 +5,6 @@ import './ForgotPassword.css';
 function ForgotPassword() {
   return (
     <>
-      {/* Header-ul cu logo-ul si titlul */}
       <header className="signup-header">
         <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
         <h1 className="signup-header-title">Bistr-O-Byte</h1>
