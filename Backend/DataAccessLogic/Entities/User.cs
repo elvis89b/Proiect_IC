@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Backend.Models
+namespace Backend.DataAccessLogic.Entities
 {
     [Table("users")]
     public class User

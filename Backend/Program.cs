@@ -1,14 +1,18 @@
 using Microsoft.EntityFrameworkCore;
-using Backend.Data;
+using Backend.DataAccessLogic; 
+using Backend.DataAccessLogic.Repositories;
+using Backend.BusinessLogic.Services;
+using Backend.DataAccessLogic.Context;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//DbContext cu PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-// CORS cereri frontend-ul React
+builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<AuthService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp", policy =>
@@ -23,11 +27,8 @@ builder.Services.AddControllers();
 
 var app = builder.Build();
 
-//CORS
 app.UseCors("AllowReactApp");
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
