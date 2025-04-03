@@ -25,7 +25,7 @@ function MyFridge() {
             <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_fridge" />
                 <h1 className="header-title_fridge">Bystr-O-Byte</h1>
                 <button className="homepage-button_fridge">
-                    <Link to="/">HomePage</Link>
+                    <Link to="/homepage" className="homepage-button_fridge">Homepage</Link>
                 </button>
             </header>
 
