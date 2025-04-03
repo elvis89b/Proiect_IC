@@ -4,8 +4,6 @@ import './Fridge.css';
 
 function MyFridge() {
     const [items, setItems] = useState([]);
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
 
     const addItem = () => {
         setItems([...items, { ingredient: '', quantity: '', calories: '' }]);
@@ -29,25 +27,6 @@ function MyFridge() {
                 <button className="homepage-button_fridge">
                     <Link to="/">HomePage</Link>
                 </button>
-                <div className="login-form_fridge">
-                    <input 
-                        type="text" 
-                        placeholder="Username" 
-                        value={username} 
-                        onChange={(e) => setUsername(e.target.value)}
-                        className="login-input_fridge"
-                    />
-                    <input 
-                        type="password" 
-                        placeholder="Password" 
-                        value={password} 
-                        onChange={(e) => setPassword(e.target.value)}
-                        className="login-input_fridge"
-                    />
-                    <button className="login-button_fridge">
-                        <Link to="/homepage" className="login-button_fridge">Login</Link>
-                    </button>
-                </div>
             </header>
 
             <main className="container_fridge">

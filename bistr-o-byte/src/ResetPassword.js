@@ -4,12 +4,33 @@ import './ResetPassword.css';
 
 function ResetPassword() {
   const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
+
 
   return (
     <>
       <header className="header_resetPassword">
         <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_resetPassword" />
         <h1 className="header-title_resetPassword">Bistr-O-Byte</h1>
+        <div className="login-form_resetPassword">
+                            <input 
+                                type="text" 
+                                placeholder="Username" 
+                                value={username} 
+                                onChange={(e) => setUsername(e.target.value)}
+                                className="login-input_resetPassword"
+                            />
+                            <input 
+                                type="password" 
+                                placeholder="Password" 
+                                value={password} 
+                                onChange={(e) => setPassword(e.target.value)}
+                                className="login-input_resetPasswordge"
+                            />
+                            <button className="login-button_resetPassword">
+                                <Link to="/homepage" className="login-button_resetPassword">Login</Link>
+                            </button>
+                        </div>
       </header>
 
     <div className="reset-password-container">
