@@ -1,3 +1,4 @@
+
 .homepage-container {
     display: flex;
     flex-direction: column;
@@ -5,7 +6,7 @@
     margin-top: 10px; 
   }
   
-  .header {
+  .header_homepage {
     width: 100%;
     display: flex;
     align-items: center;
@@ -17,18 +18,18 @@
     border: none;
   }
   
-  .logo {
+  .logo_homepage {
     height: 40px;
     margin-right: 10px;
   }
   
-  .header-title {
-    font-size: 1.5rem;
+  .header-title_homepage {
+    font-size: 2rem;
     font-weight: bold;
-    color: #fff;
+    color: #000000;
   }
   
-  .homepage-content {
+  .homepage-_homepage {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,32 +37,32 @@
     padding: 20px;
   }
   
-  .image-container {
+  .image-container_homepage {
     width: 40%;
     position: absolute;
-    left: 10%; 
-    top: 40%;
+    left: 25%; 
+    top: 30%;
   }
   
-  .home-image {
-    width: 100%;
-    height: auto;
+  .home-image_homepage {
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
   }
   
-  .buttons-container {
+  .buttons-container_homepage {
     display: flex;
     flex-direction: column;
     gap: 30px; 
     justify-content: center; 
     align-items: center; 
     position: absolute;
-    right: 10%; 
+    right: 25%; 
     top: 40%;
   }
   
-  .button {
-    padding: 15px 30px; 
+  .button_homepage {
+    padding: 12px 30px; 
     background-color: #007bff;
     color: white;
     text-decoration: none;
@@ -71,7 +72,7 @@
     width: 250px; 
   }
   
-  .button:hover {
+  .button_homepage:hover {
     background-color: #0056b3;
   }
   

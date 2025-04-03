@@ -5,9 +5,9 @@ import './ForgotPassword.css';
 function ForgotPassword() {
   return (
     <>
-      <header className="signup-header">
-        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
-        <h1 className="signup-header-title">Bistr-O-Byte</h1>
+      <header className="header_forgotPassword">
+        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_forgotPassword" />
+        <h1 className="header-title_forgotPassword">Bistr-O-Byte</h1>
       </header>
 
     <div className="forgot-password-container">
@@ -27,11 +27,11 @@ function ForgotPassword() {
           </div>
 
           <div className="forgot-password-buttons">
-            <Link to="/login" className="cancel-button">
+            <Link to="/login" className="cancel-button_forgotPassword">
               Cancel
             </Link>
 
-            <Link to="/reset-password" className="search-button">
+            <Link to="/reset-password" className="search-button_forgotPassword">
                Search
             </Link>
           </div>

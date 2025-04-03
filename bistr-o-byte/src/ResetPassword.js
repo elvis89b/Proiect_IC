@@ -7,9 +7,9 @@ function ResetPassword() {
 
   return (
     <>
-      <header className="signup-header">
-        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
-        <h1 className="signup-header-title">Bistr-O-Byte</h1>
+      <header className="header_resetPassword">
+        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_resetPassword" />
+        <h1 className="header-title_resetPassword">Bistr-O-Byte</h1>
       </header>
 
     <div className="reset-password-container">
@@ -28,8 +28,8 @@ function ResetPassword() {
             />
           </div>
           <div className="reset-password-buttons">
-            <Link to="/login" className="cancel-button">Cancel</Link>
-            <Link to="/login" className="done-button">Done</Link>
+            <Link to="/login" className="cancel-button_resetPassword">Cancel</Link>
+            <Link to="/login" className="done-button_resetPassword">Done</Link>
           </div>
         </form>
       </div>

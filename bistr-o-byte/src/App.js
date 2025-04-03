@@ -5,6 +5,7 @@ import Login from './Login';
 import ForgotPassword from './ForgotPassword';
 import ResetPassword from './ResetPassword';
 import Homepage from './Homepage';
+import Fridge from './Fridge';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/fridge" element={<Fridge/>}/>
       </Routes>
     </Router>
   );
