@@ -1,11 +1,42 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import './ForgotPassword.css';
 
 function ForgotPassword() {
         const [password, setPassword] = useState('');
         const [username, setUsername] = useState('');
+
+        const [email, setEmail] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('http://localhost:5062/api/auth/forgot-password', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email })
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        navigate('/reset-password'); // navighezi către pagina următoare
+      } else {
+        setErrorMessage(data.message || 'Email not found.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setErrorMessage('Server error. Please try again later.');
+    }
+  };
 
   return (
     <>
@@ -39,14 +70,20 @@ function ForgotPassword() {
         <p className="forgot-password-instructions">
           Please enter your email to search for your account.
         </p>
-        <form className="forgot-password-form">
+
+        {errorMessage && <div className="error-message">{errorMessage}</div>}
+
+        <form className="forgot-password-form" onSubmit={handleSearch}>
           <div className="forgot-password-form-group">
             <label htmlFor="email">Email</label>
             <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-            />
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
           </div>
 
           <div className="forgot-password-buttons">
@@ -54,9 +91,10 @@ function ForgotPassword() {
               Cancel
             </Link>
 
-            <Link to="/reset-password" className="search-button_forgotPassword">
-               Search
-            </Link>
+            <button type="submit" className="search-button_forgotPassword">
+            Search
+            </button>
+
           </div>
         </form>
       </div>

@@ -29,5 +29,11 @@ namespace Backend.DataAccessLogic.Repositories
             await _context.SaveChangesAsync();
         }
 
+        public async Task UpdateAsync(User user)
+        {//cand pun alta parola fac update la user
+            _context.Users.Update(user);
+            await _context.SaveChangesAsync(); 
+        }
+
     }
 }

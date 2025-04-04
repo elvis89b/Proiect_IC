@@ -48,5 +48,35 @@ namespace Backend.ControllerLogic.Controllers
             }
             return Ok(new { message });
         }
+
+
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordModel model)
+        {
+            var (success, message) = await _authService.CheckIfEmailExistsAsync(model.Email);
+            
+            if (!success)
+            {
+                return NotFound(new { message });
+            }
+
+            return Ok(new { message });
+        }
+
+         // Endpoint pentru resetarea parolei
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordModel model)
+        {
+            var (success, message) = await _authService.ResetUserPasswordAsync(model.Username, model.NewPassword);
+
+            if (!success)
+            {
+                return BadRequest(new { message });
+            }
+
+            return Ok(new { message });
+        }
+
+    
     }
 }

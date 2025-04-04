@@ -66,5 +66,44 @@ namespace Backend.BusinessLogic.Services
             await _userRepository.AddAsync(newUser);
             return (true, "User registered successfully.");
         }
+
+        public async Task<(bool Success, string Message)> CheckIfEmailExistsAsync(string email)
+        {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                return (false, "Email is required.");
+            }
+
+            var user = await _userRepository.GetByEmailAsync(email); 
+            if (user == null)
+            {
+                return (false, "Email not found.");
+            }
+
+            return (true, "Email found. Proceed to reset.");
+        }
+
+        public async Task<(bool Success, string Message)> ResetUserPasswordAsync(string username, string newPassword)
+    {
+        var user = await _userRepository.GetByUsernameAsync(username);
+
+        if (user == null)
+        {
+            return (false, "User not found.");
+        }
+
+        user.Password = newPassword;
+
+        // salvez utilizatoru cu noua parola
+        await _userRepository.UpdateAsync(user);
+
+        return (true, "Password reset successfully.");
+    }
+
+
+
+
+
+
     }
 }
