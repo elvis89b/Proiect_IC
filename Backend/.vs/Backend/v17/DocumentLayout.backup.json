@@ -1,57 +1,65 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\controllerlogic\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\controllerlogic\\modelsdtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\modelsdtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\dataaccesslogic\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:dataaccesslogic\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\controllerlogic\\modelsdtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\modelsdtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\dataaccesslogic\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:dataaccesslogic\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\dataaccesslogic\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:dataaccesslogic\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\controllerlogic\\modelsdtos\\resetpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\modelsdtos\\resetpasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\dataaccesslogic\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:dataaccesslogic\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\controllerlogic\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\controllerlogic\\modelsdtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\modelsdtos\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:businesslogic\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\controllerlogic\\modelsdtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:controllerlogic\\modelsdtos\\registermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\dataaccesslogic\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:dataaccesslogic\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\dataaccesslogic\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:dataaccesslogic\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\elvis\\desktop\\proiect_ic\\backend\\backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|c:\\users\\andreea\\desktop\\proiectic\\proiect_ic\\backend\\backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{C4C17EF5-9524-4BC3-8520-B51E0ABEBFF7}|Backend.csproj|solutionrelative:backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -65,143 +73,157 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ResetPasswordModel.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\ResetPasswordModel.cs",
+              "RelativeDocumentMoniker": "ControllerLogic\\ModelsDTOs\\ResetPasswordModel.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\ResetPasswordModel.cs",
+              "RelativeToolTip": "ControllerLogic\\ModelsDTOs\\ResetPasswordModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:37:10.837Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginModel.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\LoginModel.cs",
-              "RelativeDocumentMoniker": "ControllerLogic\\ModelsDTOs\\LoginModel.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\LoginModel.cs",
-              "RelativeToolTip": "ControllerLogic\\ModelsDTOs\\LoginModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:34:27.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\ControllerLogic\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "ControllerLogic\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\ControllerLogic\\Controllers\\AuthController.cs*",
-              "RelativeToolTip": "ControllerLogic\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAACEAAAAAAAAAAAAqwBYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T19:45:36.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:39:37.346Z",
-              "EditorCaption": ""
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-03T10:47:40.266Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\DataAccessLogic\\Repositories\\UserRepository.cs",
-              "RelativeDocumentMoniker": "DataAccessLogic\\Repositories\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\DataAccessLogic\\Repositories\\UserRepository.cs",
-              "RelativeToolTip": "DataAccessLogic\\Repositories\\UserRepository.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAIA9wBIAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:48:02.296Z",
+              "WhenOpened": "2025-03-27T08:39:37.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Backend.http",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.http",
+              "RelativeDocumentMoniker": "Backend.http",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.http",
+              "RelativeToolTip": "Backend.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-27T18:25:29.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\BusinessLogic\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\BusinessLogic\\Services\\AuthService.cs",
-              "RelativeToolTip": "BusinessLogic\\Services\\AuthService.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAqwBwAAAAAAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\DataAccessLogic\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DataAccessLogic\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\DataAccessLogic\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "DataAccessLogic\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:51:20.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-02T17:48:02.296Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "RegisterModel.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
-              "RelativeDocumentMoniker": "ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
-              "RelativeToolTip": "ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T17:52:39.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\DataAccessLogic\\Context\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "DataAccessLogic\\Context\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\DataAccessLogic\\Context\\AppDbContext.cs",
-              "RelativeToolTip": "DataAccessLogic\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-02T18:04:40.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\DataAccessLogic\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "DataAccessLogic\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\DataAccessLogic\\Entities\\User.cs",
-              "RelativeToolTip": "DataAccessLogic\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T19:40:33.945Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-27T18:25:07.317Z"
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "ControllerLogic\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "ControllerLogic\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T19:45:36.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\LoginModel.cs",
+              "RelativeDocumentMoniker": "ControllerLogic\\ModelsDTOs\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\LoginModel.cs",
+              "RelativeToolTip": "ControllerLogic\\ModelsDTOs\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:34:27.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\BusinessLogic\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\BusinessLogic\\Services\\AuthService.cs",
+              "RelativeToolTip": "BusinessLogic\\Services\\AuthService.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T17:51:20.527Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Backend.http",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.http",
-              "RelativeDocumentMoniker": "Backend.http",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.http",
-              "RelativeToolTip": "Backend.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-27T18:25:29.977Z"
+              "Title": "RegisterModel.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
+              "RelativeDocumentMoniker": "ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
+              "RelativeToolTip": "ControllerLogic\\ModelsDTOs\\RegisterModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T17:52:39.251Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\DataAccessLogic\\Context\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DataAccessLogic\\Context\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\DataAccessLogic\\Context\\AppDbContext.cs",
+              "RelativeToolTip": "DataAccessLogic\\Context\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-02T18:04:40.468Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\DataAccessLogic\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "DataAccessLogic\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\DataAccessLogic\\Entities\\User.cs",
+              "RelativeToolTip": "DataAccessLogic\\Entities\\User.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T19:40:33.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Backend.csproj",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.csproj",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.csproj",
               "RelativeDocumentMoniker": "Backend.csproj",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.csproj",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.csproj",
               "RelativeToolTip": "Backend.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -209,11 +231,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Properties\\launchSettings.json",
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -221,11 +243,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Backend",
-              "DocumentMoniker": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.csproj",
+              "DocumentMoniker": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.csproj",
               "RelativeDocumentMoniker": "Backend.csproj",
-              "ToolTip": "C:\\Users\\elvis\\Desktop\\Proiect_IC\\Backend\\Backend.csproj",
+              "ToolTip": "C:\\Users\\Andreea\\Desktop\\proiectIC\\Proiect_IC\\Backend\\Backend.csproj",
               "RelativeToolTip": "Backend.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-03-27T20:38:18.294Z"
