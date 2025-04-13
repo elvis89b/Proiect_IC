@@ -4,12 +4,14 @@ import './Homepage.css';
 
 function Homepage() {
   return (
-    <div className="homepage-container">
+    
+<>
       <header className="header_homepage">
         <img src="/images/logo3.png" alt="Bistr-O-Byte Logo" className="logo_homepage" />
         <h1 className="header-title_homepage">Bistr-O-Byte</h1>
       </header>
 
+    <main className="homepage-container">
       <div className="homepage-content_homepage">
         <div className="image-container_homepage">
           <img src="/images/imag.png" alt="Descriere Poza" className="home-image_homepage" />
@@ -22,7 +24,8 @@ function Homepage() {
           <Link to="/meal-planner" className="button_homepage">Meal Planner</Link>
         </div>
       </div>
-    </div>
+    </main>
+    </>
   );
 }
 
