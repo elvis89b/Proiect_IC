@@ -24,10 +24,13 @@ function MyFridge() {
             <header className="header_fridge">
             <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_fridge" />
                 <h1 className="header-title_fridge">Bystr-O-Byte</h1>
-                <button className="homepage-button_fridge">
-                    <Link to="/homepage" className="homepage-button_fridge">Homepage</Link>
-                </button>
+                <nav className="buttons_fridge">
+                    <Link to="/homepage" className="nav-button_fridge">Homepage</Link>
+                    <Link to="/dish-finder" className="nav-button_fridge">Dish Finder</Link>
+                    <Link to="/meal-planner" className="nav-button_fridge">Meal PLanner</Link>
+                </nav>
             </header>
+            
 
             <main className="container_fridge">
                 <h2>My Fridge</h2>

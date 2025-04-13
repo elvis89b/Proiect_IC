@@ -14,7 +14,7 @@
     font-size: 2rem;
     font-weight: bold;
     color: #000000;
-    margin-right:82%;
+    margin-right:auto;
 }
 
 .logo_fridge {
@@ -47,8 +47,25 @@
     color: #fff; 
 }
 
+.nav-button_fridge {
+    text-decoration: none;
+    background-color: #8fbae9ac;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+    /*margin-right: 10px;*/
+    margin-left: 10px;
+  }
+  
+  .nav-button_fridge:hover {
+    background-color: #0056b3;
+  }
 
-/* Butonul de homepage */
+
+
+/* Butonul de homepage 
 .homepage-button_fridge {
     position: absolute;
     left: 100px; 
@@ -65,4 +82,4 @@
 .homepage-button_fridge a {
     text-decoration: none;
     color: #007bff;
-}
+}*/
