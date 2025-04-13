@@ -1,0 +1,81 @@
+.header_planner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #3388ff;
+    justify-content: space-between;
+    padding: 5px 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    position: relative;
+}
+
+.header-title_planner {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+    margin-right: auto; 
+}
+
+.logo_planner {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-button_planner {
+    text-decoration: none;
+    background-color: #8fbae9ac;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+    /*margin-right: 10px;*/
+    margin-left: 10px;
+  }
+  
+  .nav-button_planner:hover {
+    background-color: #0056b3;
+  }
+
+.container_planner {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.title_planner {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.week_planner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.day_planner {
+    background-color: #d9f0ff;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.day-title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.textarea_planner {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 8px;
+}

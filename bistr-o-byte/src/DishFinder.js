@@ -16,7 +16,7 @@ function DishFinder() {
         <nav className="dishfinder-nav">
           <Link to="/homepage" className="nav-button">Homepage</Link>
           <Link to="/fridge" className="nav-button">My Fridge</Link>
-          <Link to="/design-plan" className="nav-button">Design Plan</Link>
+          <Link to="/meal-planner" className="nav-button">Meal Planner</Link>
         </nav>
       </header>
     

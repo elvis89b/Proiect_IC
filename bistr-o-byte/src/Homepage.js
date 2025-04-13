@@ -19,7 +19,7 @@ function Homepage() {
         <div className="buttons-container_homepage">
           <Link to="/fridge" className="button_homepage">My Fridge</Link>
           <Link to="/dish-finder" className="button_homepage">Dish Finder</Link>
-          <Link to="/design-plan" className="button_homepage">Design Plan</Link>
+          <Link to="/meal-planner" className="button_homepage">Meal Planner</Link>
         </div>
       </div>
     </div>
