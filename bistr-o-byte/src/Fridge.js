@@ -27,7 +27,7 @@ function MyFridge() {
                 <nav className="buttons_fridge">
                     <Link to="/homepage" className="nav-button_fridge">Homepage</Link>
                     <Link to="/dish-finder" className="nav-button_fridge">Dish Finder</Link>
-                    <Link to="/meal-planner" className="nav-button_fridge">Meal PLanner</Link>
+                    <Link to="/meal-planner" className="nav-button_fridge">Meal Planner</Link>
                 </nav>
             </header>
             
