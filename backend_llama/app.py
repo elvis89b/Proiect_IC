@@ -5,6 +5,28 @@ import psycopg2
 
 app = Flask(__name__)
 
+full_model_path = "models/mistral-7b-instruct-v0.1.Q4_0.gguf"
+# Verifică dacă modelul există deja, dacă nu, îl va descărca
+try:
+    with open(full_model_path, "rb") as f:
+        pass
+except FileNotFoundError:
+    print(f"Model file {full_model_path} not found. Will download it now.")
+    
+    model_url = "https://gpt4all.io/models/gguf/mistral-7b-instruct-v0.1.Q4_0.gguf"
+    import requests
+    import os
+    
+    os.makedirs("models", exist_ok=True)
+    response = requests.get(model_url, stream=True)
+    if response.status_code == 200:
+        with open(full_model_path, "wb") as f:
+            for chunk in response.iter_content(chunk_size=8192):
+                f.write(chunk)
+    else:
+        print(f"Failed to download model: {response.status_code}")
+        exit(1) 
+
 # La prima rulare, gpt4all va descărca automat modelul
 # Poți folosi "gpt4all-small" dacă vrei ceva mai mic
 model = GPT4All(
