@@ -32,9 +32,13 @@ export default function AIChat() {
     ];
 
     try {
+      const userId = localStorage.getItem("userId");
       const res = await fetch("/api/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "X-User-Id": userId || ""      // trimite ID‑ul user‑ului
+        },
         body: JSON.stringify(payload)
       });
       const data = await res.json();

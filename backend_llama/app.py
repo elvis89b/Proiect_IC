@@ -35,30 +35,53 @@ model = GPT4All(
     model_path=model_path,  # doar directorul
     allow_download=False
 )
-"""
-# Conectarea la PostgreSQL 
-conn = psycopg2.connect(
-    dbname="ProiectIC",
-    user="USERNAME_TAU",
-    password="PAROLA_TA",
-    host="localhost",
-    port="5432"
-)
-cur = conn.cursor()
-"""
-@app.route("/chat", methods=["POST"])
-def chat():
-    messages = request.json
+SYSTEM_PROMPT = """
+You are a friendly cooking assistant.
+When the user asks for recipes based on ingredients they have,
+always respond with a numbered list of at least five recipes formatted like:
+1. Recipe Name
+2. Recipe Name
+3. Recipe Name
+4. Recipe Name
+5. Recipe Name
 
-    prompt = "system: You are a helpful assistant. Always reply in clear English.\n"
+Then ask the user which one they’d like to add to their meal planner.
+"""
 
-    for m in messages:
-        prompt += f"{m['role']}: {m['content']}\n"
+TOOL_NOTE = """
+You can create a recipe for the user.
+When the user chooses a recipe number and a day,
+reply ONLY with JSON:
+
+{"tool":"addRecipeToPlanner",
+ "args":{
+     "name":"<recipe name>",
+     "description":"<short description>",
+     "day":"<Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday>"
+ }}
+
+Do NOT add any other text with that JSON.
+"""
+
+def build_prompt(msgs):
+    prompt = SYSTEM_PROMPT.strip() + "\n\n"
+    prompt += TOOL_NOTE + "\n\n"
+
+    for m in msgs:
+        role    = m.get('role') or m.get('Role')
+        content = m.get('content') or m.get('Content')
+        prompt += f"{role}: {content}\n"
 
     prompt += "assistant:"
+    return prompt
 
-    text = model.generate(prompt, max_tokens=256).strip()
-    return jsonify({"reply": text})
+
+@app.route("/chat", methods=["POST"])
+def chat():
+    msgs  = request.json                    
+    reply = model.generate(build_prompt(msgs), max_tokens=256).strip()
+    return jsonify({"reply": reply})
+
 
 if __name__ == "__main__":
     app.run(port=5005)

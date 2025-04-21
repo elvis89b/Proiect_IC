@@ -11,16 +11,19 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     setErrorMsg('');
-
+  
     const params = new URLSearchParams({ username, password });
-
+  
     try {
-      const response = await fetch(`http://localhost:5062/api/auth/login?${params.toString()}`, {
-        method: 'GET'
-      });
-      const data = await response.json();
-
+      const response = await fetch(
+        `http://localhost:5062/api/auth/login?${params.toString()}`, 
+        { method: 'GET' }
+      );
+  
+      const data = await response.json();  
+  
       if (response.ok) {
+        localStorage.setItem("userId", data.userId);
         navigate('/homepage');
       } else {
         setErrorMsg(data.message || 'Login failed.');
@@ -29,6 +32,7 @@ function Login() {
       setErrorMsg('Error connecting to server.');
     }
   };
+  
 
   return (
     <>

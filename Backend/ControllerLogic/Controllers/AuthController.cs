@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Backend.ControllerLogic.ModelsDTOs;
 using Backend.BusinessLogic.Services;
+using Backend.DataAccessLogic.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace Backend.ControllerLogic.Controllers
 {
@@ -9,33 +11,28 @@ namespace Backend.ControllerLogic.Controllers
     public class AuthController : ControllerBase
     {
         private readonly AuthService _authService;
-
-        public AuthController(AuthService authService)
+        private readonly AppDbContext _db;
+        public AuthController(AuthService authService, AppDbContext db)
         {
             _authService = authService;
+            _db = db;
         }
+
         [HttpGet("login")]
-        public async Task<IActionResult> Login([FromQuery] string username, [FromQuery] string password)
+        public async Task<IActionResult> Login([FromQuery] LoginModel model)
         {
-            var (success, message) = await _authService.LoginUserAsync(username, password);
+            var user = await _db.Users
+                                .FirstOrDefaultAsync(u =>
+                                  u.Username == model.Username &&
+                                  u.Password == model.Password);  
+            if (user == null)
+                return Unauthorized(new { message = "Invalid credentials" });
 
-            if (!success)
+            return Ok(new
             {
-                if (message == "Username does not exist.")
-                {
-                    return NotFound(new { message });
-                }
-                else if (message == "Wrong password for username.")
-                {
-                    return Unauthorized(new { message });
-                }
-                else
-                {
-                    return BadRequest(new { message });
-                }
-            }
-
-            return Ok(new { message });
+                userId = user.Id,
+                username = user.Username
+            });
         }
 
         [HttpPost("register")]
