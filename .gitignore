@@ -27,3 +27,4 @@ yarn-error.log*
 .vs/**/*.vsidx
 .env
 *.gguf
+backend_llama/venv
