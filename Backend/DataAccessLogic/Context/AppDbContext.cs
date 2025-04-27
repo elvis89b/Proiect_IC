@@ -14,6 +14,8 @@ namespace Backend.DataAccessLogic.Context
         public DbSet<Recipe> Recipes { get; set; }
         public DbSet<Planner> Planners { get; set; }
         public DbSet<PlannerRecipe> PlannerRecipes { get; set; }
+        public DbSet<FridgeItem> FridgeItems { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -48,6 +50,19 @@ namespace Backend.DataAccessLogic.Context
                 e.Property(p => p.RecipeId).HasColumnName("recipeid");
                 e.Property(p => p.DayOfWeek).HasColumnName("dayofweek");
             });
+
+            modelBuilder.Entity<FridgeItem>(e =>
+            {
+                e.ToTable("fridge");
+                e.Property(p => p.Id).HasColumnName("id");
+                e.Property(p => p.UserId).HasColumnName("userid");
+                e.Property(p => p.Ingredient).HasColumnName("ingredient");
+                e.Property(p => p.Quantity).HasColumnName("quantity");
+                e.Property(p => p.Calories).HasColumnName("calories");
+            });
+
         }
     }
 }
+
+

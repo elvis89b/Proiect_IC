@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     background-color: #3388ff;
-    justify-content: space-between; /*imping login ul la margine */
+    justify-content: space-between;
     padding: 5px 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 60px;
@@ -14,37 +14,72 @@
     font-size: 2rem;
     font-weight: bold;
     color: #000000;
-    margin-right:auto;
+    margin-right: auto;
 }
 
 .logo_fridge {
     height: 40px;
     margin-right: 10px;
-  }
-
+}
 
 .container_fridge {
-    width: 80%; 
-    margin: 0 auto; 
-    padding-top: 20px; 
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
 }
 
-/* stilu tabelui */
+/* Stil pentru form */
+.form_fridge {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form_fridge input, .form_fridge button {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.form_fridge button {
+    background-color: #3388ff;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form_fridge button:hover {
+    background-color: #0056b3;
+}
+
+/* Mesaj de eroare */
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Tabel */
 .table_fridge {
-    width: 100%; 
-    border-collapse: collapse; 
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-/* textu din celulele de la fridge */
-.th_fridge, .td_fridge {
+.table_fridge th {
+    background-color: #3388ff;
+    color: white;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }
 
+.table_fridge td {
+    padding: 10px;
+    text-align: center;
+}
 
-.th_fridge {
-    background-color: #3388ff; 
-    color: #fff; 
+.table_fridge tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 .nav-button_fridge {
@@ -55,31 +90,9 @@
     border-radius: 4px;
     font-size: 0.9rem;
     transition: background-color 0.2s ease-in-out;
-    /*margin-right: 10px;*/
     margin-left: 10px;
-  }
-  
-  .nav-button_fridge:hover {
-    background-color: #0056b3;
-  }
-
-
-
-/* Butonul de homepage 
-.homepage-button_fridge {
-    position: absolute;
-    left: 100px; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    background-color: #fff;
-    border: 1px solid #007bff;
-    padding: 5px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    left: 90%;
 }
 
-.homepage-button_fridge a {
-    text-decoration: none;
-    color: #007bff;
-}*/
+.nav-button_fridge:hover {
+    background-color: #0056b3;
+}

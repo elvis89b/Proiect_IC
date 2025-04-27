@@ -14,6 +14,8 @@ builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<AuthService>();
 builder.Services.AddScoped<PlannerService>();
 
+builder.Services.AddScoped<FridgeRepository>();
+builder.Services.AddScoped<FridgeService>();
 
 builder.Services.AddCors(options =>
 {
