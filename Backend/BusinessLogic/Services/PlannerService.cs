@@ -45,5 +45,16 @@ namespace Backend.BusinessLogic.Services
             _db.PlannerRecipes.Add(link);
             _db.SaveChanges();
         }
+        public Planner GetOrCreatePlanner(int userId)
+        {
+            var planner = _db.Planners.FirstOrDefault(p => p.UserId == userId);
+            if (planner == null)
+            {
+                planner = new Planner { UserId = userId };
+                _db.Planners.Add(planner);
+                _db.SaveChanges();
+            }
+            return planner;
+        }
     }
 }

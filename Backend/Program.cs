@@ -1,8 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using Backend.DataAccessLogic; 
+using Backend.DataAccessLogic;
 using Backend.DataAccessLogic.Repositories;
 using Backend.BusinessLogic.Services;
 using Backend.DataAccessLogic.Context;
+using Microsoft.Extensions.Options;
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,10 +14,20 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<AuthService>();
+
+builder.Services.AddScoped<PlannerRepository>();
 builder.Services.AddScoped<PlannerService>();
 
 builder.Services.AddScoped<FridgeRepository>();
 builder.Services.AddScoped<FridgeService>();
+
+builder.Services.AddScoped<RecipeRepository>();
+builder.Services.AddScoped<RecipeService>();
+
+builder.Services.AddScoped<PlannerRecipeRepository>();
+builder.Services.AddScoped<PlannerRecipeService>();
+
+
 
 builder.Services.AddCors(options =>
 {
@@ -28,7 +40,13 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddHttpClient();
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+     .AddJsonOptions(options =>
+     {
+    options.JsonSerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
+    options.JsonSerializerOptions.PropertyNameCaseInsensitive = true;
+       });
+
 
 var app = builder.Build();
 
@@ -37,3 +55,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+

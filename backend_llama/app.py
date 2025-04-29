@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from gpt4all import GPT4All
 import json
+import psycopg2
 
 app = Flask(__name__)
 

@@ -7,7 +7,9 @@
         public int RecipeId { get; set; }
         public string DayOfWeek { get; set; } = default!;
         // Nav‑props
-        public Planner Planner { get; set; } = default!;
-        public Recipe Recipe { get; set; } = default!;
+        public Planner? Planner { get; set; }
+        public Recipe? Recipe { get; set; }
     }
 }
+
+

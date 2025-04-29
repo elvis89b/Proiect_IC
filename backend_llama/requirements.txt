@@ -1,5 +1,0 @@
-flask
-gpt4all
-requests
-llama-cpp-python
-psycopg2-binary
