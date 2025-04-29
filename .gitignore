@@ -31,3 +31,4 @@ backend_llama/venv
 
 Backend/obj
 Backend/.vs
+Backend/bin
