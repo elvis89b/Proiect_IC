@@ -28,3 +28,6 @@ yarn-error.log*
 .env
 *.gguf
 backend_llama/venv
+
+Backend/obj
+Backend/.vs
