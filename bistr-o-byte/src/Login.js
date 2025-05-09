@@ -42,7 +42,7 @@ function Login() {
       </header>
 
       <div className="login-container">
-      <div class="decorative-form-background">
+      <div class="decorative-form-background-L">
         <div className="login-form-container">
           <h2 className="login-title">Sign In</h2>
           {errorMsg && <div className="error-message">{errorMsg}</div>}

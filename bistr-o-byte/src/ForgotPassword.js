@@ -65,7 +65,7 @@ function ForgotPassword() {
       </header>
 
     <div className="forgot-password-container">
-    <div class="decorative-form-background">
+    <div class="decorative-form-background-FP">
       <div className="forgot-password-form-container">
         <h2 className="forgot-password-title">Find your account</h2>
         <p className="forgot-password-instructions">

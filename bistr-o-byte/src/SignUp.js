@@ -49,7 +49,7 @@ function SignUp() {
       </header>
 
     <div className="signup-container">
-      <div className="decorative-form-background">
+      <div className="decorative-form-background-SU">
       <div className="signup-form-container">
       
         <h2 className="signup-title">Sign Up</h2>
