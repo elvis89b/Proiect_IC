@@ -41,7 +41,7 @@ function ForgotPassword() {
   return (
     <>
       <header className="header_forgotPassword">
-        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_forgotPassword" />
+        <img src="/images/logoG1.gif" alt="Bistr-O-Byte Logo" className="logo_forgotPassword" />
         <h1 className="header-title_forgotPassword">Bistr-O-Byte</h1>
         <div className="login-form_forgotPassword">
           <input 
@@ -65,6 +65,7 @@ function ForgotPassword() {
       </header>
 
     <div className="forgot-password-container">
+    <div class="decorative-form-background">
       <div className="forgot-password-form-container">
         <h2 className="forgot-password-title">Find your account</h2>
         <p className="forgot-password-instructions">
@@ -97,6 +98,7 @@ function ForgotPassword() {
 
           </div>
         </form>
+      </div>
       </div>
     </div>
     </>
