@@ -37,11 +37,12 @@ function Login() {
   return (
     <>
       <header className="header_login">
-        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_login" />
+        <img src="/images/logoG1.gif" alt="Bistr-O-Byte Logo" className="logo_login" />
         <h1 className="header-title_login">Bistr-O-Byte</h1>
       </header>
 
       <div className="login-container">
+      <div class="decorative-form-background">
         <div className="login-form-container">
           <h2 className="login-title">Sign In</h2>
           {errorMsg && <div className="error-message">{errorMsg}</div>}
@@ -83,6 +84,7 @@ function Login() {
             <span>New User? </span>
             <a href="/signup">Sign Up</a>
           </div>
+        </div>
         </div>
       </div>
     </>
