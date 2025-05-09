@@ -41,7 +41,7 @@ function ResetPassword() {
   return (
     <>
       <header className="header_resetPassword">
-        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_resetPassword" />
+        <img src="/images/logoG1.gif" alt="Bistr-O-Byte Logo" className="logo_resetPassword" />
         <h1 className="header-title_resetPassword">Bistr-O-Byte</h1>
         <div className="login-form_resetPassword">
           <input 
@@ -66,6 +66,7 @@ function ResetPassword() {
 
       
       <div className="reset-password-container">
+      <div class="decorative-form-background-RP">
         <div className="reset-password-form-container">
           <h2 className="reset-password-title">Choose a new password</h2>
 
@@ -91,6 +92,7 @@ function ResetPassword() {
               </button>
             </div>
           </form>
+        </div>
         </div>
       </div>
     </>
