@@ -42,13 +42,16 @@ function SignUp() {
   };
 
   return (
-    
-    <div className="signup-container">
-      <header className="signup-header">
-        <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="signup-logo" />
+    <>
+    <header className="signup-header">
+        <img src="/images/logoG1.gif" alt="Bistr-O-Byte Logo" className="signup-logo" />
         <h1 className="signup-header-title">Bistr-O-Byte</h1>
       </header>
+
+    <div className="signup-container">
+      <div className="decorative-form-background">
       <div className="signup-form-container">
+      
         <h2 className="signup-title">Sign Up</h2>
         <form className="signup-form" onSubmit={(e) => e.preventDefault()}>
           <div className="signup-form-group">
@@ -109,7 +112,9 @@ function SignUp() {
           <a href="/login">Log In</a>
         </div>
       </div>
+      </div>
     </div>
+    </>
   
   );
 }
