@@ -1,3 +1,5 @@
+/* src/pages/Fridge.css */
+
 .header_fridge {
     width: 100%;
     display: flex;
@@ -7,19 +9,37 @@
     padding: 5px 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     height: 60px;
-    position: relative;
-}
-
-.header-title_fridge {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000000;
-    margin-right: auto;
 }
 
 .logo_fridge {
     height: 40px;
     margin-right: 10px;
+}
+
+.header-title_fridge {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    margin-right: auto;
+}
+
+.buttons_fridge {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button_fridge {
+    text-decoration: none;
+    background-color: #8fbae9ac;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.nav-button_fridge:hover {
+    background-color: #0056b3;
 }
 
 .container_fridge {
@@ -28,14 +48,14 @@
     padding-top: 20px;
 }
 
-/* Stil pentru form */
 .form_fridge {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
 }
 
-.form_fridge input, .form_fridge button {
+.form_fridge input,
+.form_fridge button {
     padding: 8px;
     font-size: 1rem;
 }
@@ -46,20 +66,13 @@
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .form_fridge button:hover {
     background-color: #0056b3;
 }
 
-/* Mesaj de eroare */
-.error-message {
-    color: red;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-/* Tabel */
 .table_fridge {
     width: 100%;
     border-collapse: collapse;
@@ -82,17 +95,59 @@
     background-color: #f2f2f2;
 }
 
-.nav-button_fridge {
-    text-decoration: none;
-    background-color: #8fbae9ac;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease-in-out;
-    margin-left: 10px;
+.error-message {
+    color: red;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
-.nav-button_fridge:hover {
+/* --- AI Chat Modal Styles --- */
+
+.ai-chat-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: background-color 0.2s ease;
+}
+
+.ai-chat-button:hover {
     background-color: #0056b3;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
 }

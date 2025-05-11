@@ -1,5 +1,7 @@
+// src/pages/Fridge.js
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import AIChat from './AIChat';
 import './Fridge.css';
 
 function MyFridge() {
@@ -8,6 +10,7 @@ function MyFridge() {
     const [quantity, setQuantity] = useState('');
     const [calories, setCalories] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
+    const [showChat, setShowChat] = useState(false);
     const navigate = useNavigate();
 
     const userId = localStorage.getItem('userId');
@@ -39,19 +42,17 @@ function MyFridge() {
             return;
         }
 
-        const newItem = { 
-            userId: parseInt(userId), 
-            ingredient, 
-            quantity, 
+        const newItem = {
+            userId: parseInt(userId),
+            ingredient,
+            quantity,
             calories: parseInt(calories)
         };
 
         try {
             const response = await fetch('http://localhost:5062/api/fridge', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newItem),
             });
 
@@ -81,9 +82,7 @@ function MyFridge() {
         try {
             await fetch('http://localhost:5062/api/fridge', {
                 method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     id: item.id,
                     userId: item.userId,
@@ -121,32 +120,41 @@ function MyFridge() {
         <>
             <header className="header_fridge">
                 <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_fridge" />
-                <h1 className="header-title_fridge">Bystr-O-Byte</h1>
+                <h1 className="header-title_fridge">Bistr-O-Byte</h1>
                 <nav className="buttons_fridge">
                     <Link to="/homepage" className="nav-button_fridge">Homepage</Link>
-                    <Link to="/dish-finder" className="nav-button_fridge">Dish Finder</Link>
                     <Link to="/meal-planner" className="nav-button_fridge">Meal Planner</Link>
                 </nav>
             </header>
 
             <main className="container_fridge">
                 <h2>My Fridge</h2>
+
+                {/* AI Chat button */}
+                <button
+                    className="ai-chat-button"
+                    onClick={() => setShowChat(true)}
+                >
+                    Ask AI for Dish Ideas
+                </button>
+
                 {errorMessage && <div className="error-message">{errorMessage}</div>}
+
                 <form className="form_fridge" onSubmit={addItem}>
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder="Ingredient"
                         value={ingredient}
                         onChange={(e) => setIngredient(e.target.value)}
                     />
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder="Quantity"
                         value={quantity}
                         onChange={(e) => setQuantity(e.target.value)}
                     />
-                    <input 
-                        type="number" 
+                    <input
+                        type="number"
                         placeholder="Calories"
                         value={calories}
                         onChange={(e) => setCalories(e.target.value)}
@@ -157,7 +165,7 @@ function MyFridge() {
                 <table className="table_fridge">
                     <thead>
                         <tr>
-                            <th>Ingredients</th>
+                            <th>Ingredient</th>
                             <th>Quantity</th>
                             <th>Calories</th>
                             <th>Actions</th>
@@ -167,23 +175,23 @@ function MyFridge() {
                         {items.map((item, index) => (
                             <tr key={item.id}>
                                 <td>
-                                    <input 
-                                        type="text" 
-                                        value={item.ingredient} 
+                                    <input
+                                        type="text"
+                                        value={item.ingredient}
                                         onChange={(e) => updateItem(index, 'ingredient', e.target.value)}
                                     />
                                 </td>
                                 <td>
-                                    <input 
-                                        type="text" 
-                                        value={item.quantity} 
+                                    <input
+                                        type="text"
+                                        value={item.quantity}
                                         onChange={(e) => updateItem(index, 'quantity', e.target.value)}
                                     />
                                 </td>
                                 <td>
-                                    <input 
-                                        type="number" 
-                                        value={item.calories} 
+                                    <input
+                                        type="number"
+                                        value={item.calories}
                                         onChange={(e) => updateItem(index, 'calories', e.target.value)}
                                     />
                                 </td>
@@ -195,6 +203,21 @@ function MyFridge() {
                     </tbody>
                 </table>
             </main>
+
+            {/* AI Chat Modal */}
+            {showChat && (
+                <div className="modal-overlay">
+                    <div className="modal-content">
+                        <button
+                            className="close-btn"
+                            onClick={() => setShowChat(false)}
+                        >
+                            ×
+                        </button>
+                        <AIChat onClose={() => setShowChat(false)} />
+                    </div>
+                </div>
+            )}
         </>
     );
 }

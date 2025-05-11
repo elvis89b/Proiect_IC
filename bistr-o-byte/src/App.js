@@ -6,7 +6,6 @@ import ForgotPassword from './ForgotPassword';
 import ResetPassword from './ResetPassword';
 import Homepage from './Homepage';
 import Fridge from './Fridge';
-import DishFinder from './DishFinder';
 import MealPlanner from './MealPlanner';
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
         <Route path="/reset-password" element={<ResetPassword />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/fridge" element={<Fridge/>}/>
-        <Route path="/dish-finder" element={<DishFinder />} />
         <Route path="/meal-planner" element={<MealPlanner />} />
 
       </Routes>

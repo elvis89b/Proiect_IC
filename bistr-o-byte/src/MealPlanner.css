@@ -1,81 +1,262 @@
 .header_planner {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #3388ff;
-    justify-content: space-between;
-    padding: 5px 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 60px;
-    position: relative;
-}
-
-.header-title_planner {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000000;
-    margin-right: auto; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #3388ff;
+  justify-content: space-between;
+  padding: 5px 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 60px;
 }
 
 .logo_planner {
-    height: 40px;
-    margin-right: 10px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-title_planner {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000;
+  margin-right: auto;
+}
+
+.buttons_planner {
+  display: flex;
+  gap: 10px;
 }
 
 .nav-button_planner {
-    text-decoration: none;
-    background-color: #8fbae9ac;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    transition: background-color 0.2s ease-in-out;
-    /*margin-right: 10px;*/
-    margin-left: 10px;
-  }
-  
-  .nav-button_planner:hover {
-    background-color: #0056b3;
-  }
+  text-decoration: none;
+  background-color: #8fbae9ac;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-button_planner:hover {
+  background-color: #0056b3;
+}
 
 .container_planner {
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
 }
 
 .title_planner {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 .week_planner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
 .day_planner {
-    background-color: #d9f0ff;
-    padding: 15px;
-    border-radius: 8px;
-    width: 200px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #d9f0ff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .day-title {
-    text-align: center;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
-.textarea_planner {
-    width: 100%;
-    height: 100px;
-    resize: vertical;
-    border: 1px solid #aaa;
-    border-radius: 4px;
-    padding: 8px;
+.select-recipe {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 8px;
+}
+
+.add-button,
+.view-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.add-button {
+  background-color: #3388ff;
+  color: #fff;
+}
+
+.add-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.view-button {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.add-button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.view-button:hover {
+  background-color: #218838;
+}
+
+
+.planned-list {
+  list-style: disc inside;
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.planned-list li {
+  margin: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.planned-delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #c00;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+}
+
+.planned-delete-btn:hover {
+  color: #900;
+}
+
+.no-planned {
+  font-style: italic;
+  color: #555;
+}
+
+
+.open-create-recipe-btn {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 20px auto 0;
+  display: block;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.open-create-recipe-btn:hover {
+  background-color: #e0a800;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+}
+
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.modal-content input[type="text"],
+.modal-content textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content textarea {
+  resize: vertical;
+}
+
+.modal-submit-btn {
+  background-color: #28a745;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.modal-submit-btn:hover {
+  background-color: #218838;
+}
+
+.modal-content .error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+
+.loading {
+  text-align: center;
+  padding: 20px;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  padding: 20px;
 }
