@@ -60,7 +60,6 @@ namespace Backend.ControllerLogic.Controllers
             return Ok(new { message });
         }
 
-         // Endpoint pentru resetarea parolei
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordModel model)
         {

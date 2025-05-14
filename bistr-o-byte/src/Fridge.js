@@ -124,13 +124,12 @@ function MyFridge() {
                 <nav className="buttons_fridge">
                     <Link to="/homepage" className="nav-button_fridge">Homepage</Link>
                     <Link to="/meal-planner" className="nav-button_fridge">Meal Planner</Link>
+                    <Link to="/login" className="nav-button_fridge">Logout</Link>
                 </nav>
             </header>
 
             <main className="container_fridge">
                 <h2>My Fridge</h2>
-
-                {/* AI Chat button */}
                 <button
                     className="ai-chat-button"
                     onClick={() => setShowChat(true)}

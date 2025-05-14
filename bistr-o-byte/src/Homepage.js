@@ -9,6 +9,7 @@ function Homepage() {
       <header className="header_homepage">
         <img src="/images/logo3.png" alt="Bistr-O-Byte Logo" className="logo_homepage" />
         <h1 className="header-title_homepage">Bistr-O-Byte</h1>
+        <Link to="/login" className="button_homepage">Logout</Link>
       </header>
 
     <main className="homepage-container">
@@ -17,10 +18,10 @@ function Homepage() {
           <img src="/images/imag.png" alt="Descriere Poza" className="home-image_homepage" />
         </div>
 
-
         <div className="buttons-container_homepage">
           <Link to="/fridge" className="button_homepage">My Fridge</Link>
           <Link to="/meal-planner" className="button_homepage">Meal Planner</Link>
+          
         </div>
       </div>
     </main>

@@ -5,8 +5,12 @@ using Backend.BusinessLogic.Services;
 using Backend.DataAccessLogic.Context;
 using Microsoft.Extensions.Options;
 using System.Text.Json;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
@@ -49,6 +53,9 @@ builder.Services.AddControllers()
 
 
 var app = builder.Build();
+
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseCors("AllowReactApp");
 app.UseAuthorization();

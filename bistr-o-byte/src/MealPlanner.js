@@ -139,6 +139,7 @@ const MealPlanner = () => {
         <nav className="buttons_planner">
           <Link to="/homepage" className="nav-button_planner">Homepage</Link>
           <Link to="/fridge"    className="nav-button_planner">My Fridge</Link>
+          <Link to="/login" className="nav-button_fridge">Logout</Link>
         </nav>
       </header>
 
