@@ -131,6 +131,7 @@ function MyFridge() {
 
             <div className="login-container">
             <main className="container_fridge">
+                
                 <h2>My Fridge</h2>
                 <button
                     className="ai-chat-button"
@@ -178,6 +179,7 @@ function MyFridge() {
                                 <td>
                                     <input
                                         type="text"
+                                        className="modern-input"
                                         value={item.ingredient}
                                         onChange={(e) => updateItem(index, 'ingredient', e.target.value)}
                                     />
@@ -185,6 +187,7 @@ function MyFridge() {
                                 <td>
                                     <input
                                         type="text"
+                                        className="modern-input"
                                         value={item.quantity}
                                         onChange={(e) => updateItem(index, 'quantity', e.target.value)}
                                     />
@@ -192,12 +195,13 @@ function MyFridge() {
                                 <td>
                                     <input
                                         type="number"
+                                        className="modern-input"
                                         value={item.calories}
                                         onChange={(e) => updateItem(index, 'calories', e.target.value)}
                                     />
                                 </td>
                                 <td>
-                                    <button onClick={() => removeItem(index)}>Delete</button>
+                                    <button className="modern-button" onClick={() => removeItem(index)}>Delete</button>
                                 </td>
                             </tr>
                         ))}
