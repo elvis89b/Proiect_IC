@@ -119,7 +119,7 @@ function MyFridge() {
     return (
         <>
             <header className="header_fridge">
-                <img src="/images/logo1.png" alt="Bistr-O-Byte Logo" className="logo_fridge" />
+                <img src="/images/logoG1.gif" alt="Bistr-O-Byte Logo" className="logo_fridge" />
                 <h1 className="header-title_fridge">Bistr-O-Byte</h1>
                 <nav className="buttons_fridge">
                     <Link to="/homepage" className="nav-button_fridge">Homepage</Link>
@@ -128,6 +128,8 @@ function MyFridge() {
                 </nav>
             </header>
 
+
+            <div className="login-container">
             <main className="container_fridge">
                 <h2>My Fridge</h2>
                 <button
@@ -202,6 +204,7 @@ function MyFridge() {
                     </tbody>
                 </table>
             </main>
+            </div>
 
             {/* AI Chat Modal */}
             {showChat && (
@@ -216,6 +219,7 @@ function MyFridge() {
                         <AIChat onClose={() => setShowChat(false)} />
                     </div>
                 </div>
+                
             )}
         </>
     );
