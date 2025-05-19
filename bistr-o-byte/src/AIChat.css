@@ -1,70 +1,102 @@
 .aichat-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 16px;
-  font-family: sans-serif;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #5c2a10;
 }
 
 .messages-window {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  height: 400px;
+  background: #fff8e7;
+  border: none;
+  border-radius: 16px;
+  height: 450px;
   overflow-y: auto;
-  padding: 8px;
-  margin-bottom: 12px;
-  background-color: #f9f9f9;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 20px rgba(255, 94, 94, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .ai-message, .user-message {
   display: flex;
-  align-items: flex-start;
-  margin: 6px 0;
+  flex-direction: column;
+  max-width: 80%;
 }
 
-.ai-message .message-sender {
-  font-weight: bold;
-  margin-right: 6px;
-  color: #333;
+.ai-message {
+  align-self: flex-start;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: #fff8e7;
+  border-radius: 16px 16px 16px 4px;
+  padding: 12px 16px;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
 .user-message {
-  justify-content: flex-end;
+  align-self: flex-end;
+  background: #ffe2d1;
+  color: #5c2a10;
+  border-radius: 16px 16px 4px 16px;
+  padding: 12px 16px;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.user-message .message-sender {
+.message-sender {
   font-weight: bold;
-  margin-right: 6px;
-  color: #007bff;
+  margin-bottom: 4px;
+  font-size: 0.9rem;
 }
 
 .message-text {
   word-wrap: break-word;
-  max-width: 80%;
+  font-size: 1rem;
 }
 
 .input-area {
   display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .input-area input {
   flex-grow: 1;
-  padding: 8px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
   font-size: 1rem;
+  outline: none;
+  background-color: #fffaf2;
 }
 
 .input-area button {
-  padding: 8px 16px;
-  margin-left: 8px;
+  padding: 12px 20px;
   border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: #fff8e7;
   font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(255, 94, 94, 0.3);
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 .input-area button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  transform: scale(1.05);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
