@@ -1,79 +1,150 @@
+/* === Animated Gradient Background === */
+@keyframes animatedGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
+/* === Page Background === */
 .homepage-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; 
-  }
-  
-  .header_homepage {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color: #3388ff;
-    justify-content: space-between;
-    padding: 5px 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    height: 60px;
-    position: relative;
-  }
-  
-  .logo_homepage {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .header-title_homepage {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #000000;
-    margin-right: auto;
-  }
-  
-  .homepage-_homepage {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  .image-container_homepage {
-    width: 40%;
-    position: absolute;
-    left: 25%; 
-    top: 30%;
-  }
-  
-  .home-image_homepage {
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
-  }
-  
-  .buttons-container_homepage {
-    display: flex;
-    flex-direction: column;
-    gap: 30px; 
-    justify-content: center; 
-    align-items: center; 
-    position: absolute;
-    right: 25%; 
-    top: 40%;
-  }
-  
-  .button_homepage {
-    padding: 12px 30px; 
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    text-transform: uppercase;
-    font-size: 1.2rem; 
-    width: 250px; 
-  }
-  
-  .button_homepage:hover {
-    background-color: #0056b3;
-  }
-  
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f29f2399 0%, #f9d89e 100%);
+  background-size: 600% 600%;
+  animation: animatedGradient 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* === Header === */
+.header_homepage {
+  width: 100%;
+  height: 70px;
+  /* background: #f6d593; */
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.logo_homepage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.header-title_homepage {
+    font-size: 2.5rem;
+  font-weight: 400;
+  color: #5c2a10;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: none;
+  animation: slideIn 1s ease-out;
+
+  letter-spacing: 2px;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+/* === Content Wrapper === */
+.homepage-content_homepage {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+/* === Image === */
+.image-container_homepage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image_homepage {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.home-image_homepage:hover {
+  transform: scale(1.05);
+}
+
+/* === Buttons === */
+.buttons-container_homepage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_homepage {
+  font-size: 1.2rem;
+  width: 220px;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: #fff8e7;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 94, 94, 0.3);
+}
+
+.button_homepage:hover {
+  transform: scale(1.07);
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+}
+
+.Logout_button_homepage {
+  font-size: 1.2rem;
+  width: 100px;
+   
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  color: #fff8e7;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 8px 20px rgba(255, 94, 94, 0.3);
+  position: relative;      
+  right: 40px;
+}
+
+.Logout_button_homepage:hover {
+  transform: scale(1.07);
+  background: linear-gradient(90deg, #ff5e62, #ff9966);
+}

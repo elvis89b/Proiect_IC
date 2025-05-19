@@ -7,15 +7,15 @@ function Homepage() {
     
 <>
       <header className="header_homepage">
-        <img src="/images/logo3.png" alt="Bistr-O-Byte Logo" className="logo_homepage" />
+        <img src="/images/logoG1.gif" alt="Bistr-O-Byte Logo" className="logo_homepage" />
         <h1 className="header-title_homepage">Bistr-O-Byte</h1>
-        <Link to="/login" className="button_homepage">Logout</Link>
+        <Link to="/login" className="Logout_button_homepage">Logout</Link>
       </header>
 
     <main className="homepage-container">
       <div className="homepage-content_homepage">
         <div className="image-container_homepage">
-          <img src="/images/imag.png" alt="Descriere Poza" className="home-image_homepage" />
+          <img src="/images/pizza.gif" alt="Descriere Poza" className="home-image_homepage" />
         </div>
 
         <div className="buttons-container_homepage">
