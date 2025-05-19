@@ -134,7 +134,7 @@ const MealPlanner = () => {
   return (
     <>
       <header className="header_planner">
-        <img src="/images/logo1.png" alt="Logo" className="logo_planner" />
+        <img src="/images/logoG1.gif" alt="Logo" className="logo_planner" />
         <h1 className="header-title_planner">Bistr-O-Byte</h1>
         <nav className="buttons_planner">
           <Link to="/homepage" className="nav-button_planner">Homepage</Link>
