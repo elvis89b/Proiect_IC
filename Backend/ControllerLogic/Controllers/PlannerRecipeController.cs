@@ -11,7 +11,6 @@ namespace Backend.API.Controllers
         private readonly PlannerRecipeService _plannerRecipeService;
         private readonly PlannerService _plannerService;
 
-        // Injectăm și PlannerService, pe lângă PlannerRecipeService
         public PlannerRecipeController(
             PlannerRecipeService plannerRecipeService,
             PlannerService plannerService)
@@ -20,16 +19,13 @@ namespace Backend.API.Controllers
             _plannerService = plannerService;
         }
 
-        // nou: GET api/plannerRecipe/byUser/5
-        // returnează sau creează planner-ul pentru userId=5
         [HttpGet("byUser/{userId}")]
-        public IActionResult GetOrCreatePlannerByUser(int userId)
+        public async Task<IActionResult> GetOrCreatePlannerByUser(int userId)
         {
-            var planner = _plannerService.GetOrCreatePlanner(userId);
+            var planner = await _plannerService.GetOrCreatePlannerAsync(userId);
             return Ok(new { id = planner.Id, userId = planner.UserId });
         }
 
-        // deja existent: preia toate reţetele dintr-un planner
         [HttpGet("{plannerId}")]
         public async Task<IActionResult> GetPlannerRecipes(int plannerId)
         {

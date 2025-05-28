@@ -19,5 +19,18 @@ namespace Backend.DataAccessLogic.Repositories
             _context.Planners.Add(planner);
             await _context.SaveChangesAsync();
         }
+        public async Task<Recipe?> GetRecipeByNameAsync(string name)
+                => await _context.Recipes.FirstOrDefaultAsync(r => r.Name == name);
+
+        public async Task AddRecipeAsync(Recipe recipe)
+        {
+            _context.Recipes.Add(recipe);
+            await _context.SaveChangesAsync();
+        }
+        public async Task AddPlannerRecipeAsync(PlannerRecipe plannerRecipe)
+        {
+            _context.PlannerRecipes.Add(plannerRecipe);
+            await _context.SaveChangesAsync();
+        }
     }
 }

@@ -11,23 +11,22 @@ namespace Backend.ControllerLogic.Controllers
     public class AuthController : ControllerBase
     {
         private readonly AuthService _authService;
-        private readonly AppDbContext _db;
-        public AuthController(AuthService authService, AppDbContext db)
+        public AuthController(AuthService authService)
         {
             _authService = authService;
-            _db = db;
         }
 
         [HttpGet("login")]
         public async Task<IActionResult> Login([FromQuery] LoginModel model)
         {
-            var user = await _db.Users
-                                .FirstOrDefaultAsync(u =>
-                                  u.Username == model.Username &&
-                                  u.Password == model.Password);  
-            if (user == null)
-                return Unauthorized(new { message = "Invalid credentials" });
+            var (success, message) = await _authService.LoginUserAsync(model.Username, model.Password);
 
+            if (!success)
+            {
+                return Unauthorized(new { message });
+            }
+
+            var user = await _authService.GetUserByUsernameAsync(model.Username);
             return Ok(new
             {
                 userId = user.Id,

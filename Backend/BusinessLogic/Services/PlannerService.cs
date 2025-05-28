@@ -1,60 +1,59 @@
-﻿using Backend.DataAccessLogic.Context;
-using System.Numerics;
+﻿using System.Threading.Tasks;
 using Backend.DataAccessLogic.Entities;
+using Backend.DataAccessLogic.Repositories;
 
 namespace Backend.BusinessLogic.Services
 {
     public class PlannerService
     {
-        private readonly AppDbContext _db;
-        public PlannerService(AppDbContext db) => _db = db;
+        private readonly PlannerRepository _plannerRepository;
 
-        public int InsertRecipeIfNew(string name, string desc)
+        public PlannerService(PlannerRepository plannerRepository)
         {
-            var rec = _db.Recipes.FirstOrDefault(r => r.Name == name);
+            _plannerRepository = plannerRepository;
+        }
+
+        public async Task<int> InsertRecipeIfNewAsync(string name, string desc)
+        {
+            var rec = await _plannerRepository.GetRecipeByNameAsync(name);
             if (rec == null)
             {
                 rec = new Recipe { Name = name, Description = desc };
-                _db.Recipes.Add(rec);
-                _db.SaveChanges();
+                await _plannerRepository.AddRecipeAsync(rec);
             }
             return rec.Id;
         }
 
-        public void AddToPlanner(int userId, int recipeId, string day)
+        public async Task AddToPlannerAsync(int userId, int recipeId, string day)
         {
-           
-            var planner = _db.Planners
-                             .FirstOrDefault(p => p.UserId == userId);
+            var planner = await _plannerRepository.GetByUserIdAsync(userId);
 
             if (planner == null)
             {
                 planner = new Planner { UserId = userId };
-                _db.Planners.Add(planner);
-                _db.SaveChanges();                   
+                await _plannerRepository.AddPlannerAsync(planner);
             }
 
-     
             var link = new PlannerRecipe
             {
-                PlannerId = planner.Id,              
+                PlannerId = planner.Id,
                 RecipeId = recipeId,
                 DayOfWeek = day
             };
 
-            _db.PlannerRecipes.Add(link);
-            _db.SaveChanges();
+            await _plannerRepository.AddPlannerRecipeAsync(link);
         }
-        public Planner GetOrCreatePlanner(int userId)
+
+        public async Task<Planner> GetOrCreatePlannerAsync(int userId)
         {
-            var planner = _db.Planners.FirstOrDefault(p => p.UserId == userId);
+            var planner = await _plannerRepository.GetByUserIdAsync(userId);
             if (planner == null)
             {
                 planner = new Planner { UserId = userId };
-                _db.Planners.Add(planner);
-                _db.SaveChanges();
+                await _plannerRepository.AddPlannerAsync(planner);
             }
             return planner;
         }
+
     }
 }

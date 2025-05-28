@@ -84,26 +84,23 @@ namespace Backend.BusinessLogic.Services
         }
 
         public async Task<(bool Success, string Message)> ResetUserPasswordAsync(string username, string newPassword)
-    {
-        var user = await _userRepository.GetByUsernameAsync(username);
-
-        if (user == null)
         {
-            return (false, "User not found.");
+            var user = await _userRepository.GetByUsernameAsync(username);
+
+            if (user == null)
+            {
+                return (false, "User not found.");
+            }
+            user.Password = newPassword;
+            await _userRepository.UpdateAsync(user);
+
+            return (true, "Password reset successfully.");
         }
 
-        user.Password = newPassword;
-
-        // salvez utilizatoru cu noua parola
-        await _userRepository.UpdateAsync(user);
-
-        return (true, "Password reset successfully.");
-    }
-
-
-
-
-
+        public async Task<User> GetUserByUsernameAsync(string username)
+        {
+            return await _userRepository.GetByUsernameAsync(username);
+        }
 
     }
 }
