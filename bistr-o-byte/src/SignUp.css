@@ -128,7 +128,7 @@
 .signup-button {
   margin-top: 1.5rem;
   padding: 0.75rem;
-  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  background: linear-gradient(90deg, #ff7455,#ffa46e);
   color: white;
   border: none;
   border-radius: 25px;
@@ -139,7 +139,7 @@
 
 .signup-button:hover {
   transform: scale(1.05);
-  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  background: linear-gradient(90deg,#ffa46e,#ff7455);
 }
 
 .signup-button:active {

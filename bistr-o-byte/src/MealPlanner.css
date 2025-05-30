@@ -4,6 +4,13 @@
   100% { background-position: 0% 50%; }
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
  font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -54,10 +61,12 @@ body {
 .buttons_planner {
   display: flex;
   gap: 12px;
+  padding-left: 16px;
+  padding-right: 35px;
 }
 
 .nav-button_planner {
-  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  background: linear-gradient(90deg,#ffa46e, #ff7455);
   color: white;
   padding: 0.6rem 1.2rem;
   border-radius: 30px;
@@ -71,7 +80,7 @@ body {
 }
 
 .nav-button_planner:hover {
-  background: linear-gradient(90deg, #ff5e62, #ff9966);
+  background: linear-gradient(90deg, #ff7455,#ffa46e);
   transform: scale(1.05);
 }
 
@@ -146,7 +155,7 @@ body {
 }
 
 .add-button {
-  background: linear-gradient(90deg, #ff9966, #ff5e62);
+  background: linear-gradient(90deg,#ffa46e, #ff7455);
   color: rgb(255, 255, 255);
 }
 
