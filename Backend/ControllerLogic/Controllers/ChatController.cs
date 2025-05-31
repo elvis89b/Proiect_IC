@@ -31,7 +31,7 @@ namespace Backend.ControllerLogic.Controllers
                 var call = JsonSerializer.Deserialize<ToolCall>(
                     aiReply,
                     new JsonSerializerOptions { PropertyNameCaseInsensitive = true }
-                )!;
+                )!; //null forgiving
 
                 if (call.Tool == "addRecipeToPlanner")
                 {
