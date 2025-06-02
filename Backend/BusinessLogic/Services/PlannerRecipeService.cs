@@ -18,7 +18,7 @@ namespace Backend.BusinessLogic.Services
             var recipes = await _plannerRecipeRepository.GetRecipesByPlannerIdAsync(plannerId);
             if (recipes == null || !recipes.Any())
             {
-                return (false, "No recipes found for this planner.", new List<PlannerRecipeModel>());
+                return (true, "No recipes found for this planner.", new List<PlannerRecipeModel>());
             }
 
             var recipesDTO = recipes.Select(recipe => new PlannerRecipeModel

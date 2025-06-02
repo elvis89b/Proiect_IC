@@ -11,9 +11,11 @@ namespace Backend.ControllerLogic.Controllers
     public class AuthController : ControllerBase
     {
         private readonly AuthService _authService;
-        public AuthController(AuthService authService)
+        private readonly PlannerService _plannerService;
+        public AuthController(AuthService authService, PlannerService plannerService)
         {
             _authService = authService;
+            _plannerService = plannerService;
         }
 
         [HttpGet("login")]
@@ -27,12 +29,17 @@ namespace Backend.ControllerLogic.Controllers
             }
 
             var user = await _authService.GetUserByUsernameAsync(model.Username);
+
+            var planner = await _plannerService.GetOrCreatePlannerAsync(user.Id);
+
             return Ok(new
             {
                 userId = user.Id,
-                username = user.Username
+                username = user.Username,
+                plannerId = planner.Id 
             });
         }
+
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterModel model)

@@ -24,6 +24,7 @@ function Login() {
   
       if (response.ok) {
         localStorage.setItem("userId", data.userId);
+        localStorage.setItem("plannerId", data.plannerId);
         navigate('/homepage');
       } else {
         setErrorMsg(data.message || 'Login failed.');
