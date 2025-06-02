@@ -28,8 +28,8 @@ function ForgotPassword() {
       const data = await response.json();
 
       if (response.ok) {
-        navigate('/reset-password'); // navighezi către pagina următoare
-      } else {
+      navigate('/reset-password', { state: { email } });
+      }else {
         setErrorMessage(data.message || 'Email not found.');
       }
     } catch (error) {

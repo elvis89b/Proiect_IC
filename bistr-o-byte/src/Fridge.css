@@ -175,7 +175,6 @@
   box-shadow: 0 0 8px 2px rgba(242, 159, 35, 0.7);
 }
 
-/* ------ UPDATED BUTTON STYLE BELOW ------ */
 
 .form_fridge button,
 .modern-button {
@@ -243,8 +242,6 @@
   margin-bottom: 1rem;
   text-align: center;
 }
-
-/* --- AI Chat Modal Styles --- */
 
 .ai-chat-button {
   background-color: #ffa13c;

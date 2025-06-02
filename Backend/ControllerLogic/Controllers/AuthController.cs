@@ -62,7 +62,7 @@ namespace Backend.ControllerLogic.Controllers
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordModel model)
         {
-            var (success, message) = await _authService.ResetUserPasswordAsync(model.Username, model.NewPassword);
+            var (success, message) = await _authService.ResetUserPasswordByEmailAsync(model.Email, model.NewPassword);
 
             if (!success)
             {
@@ -72,6 +72,7 @@ namespace Backend.ControllerLogic.Controllers
             return Ok(new { message });
         }
 
-    
+
+
     }
 }

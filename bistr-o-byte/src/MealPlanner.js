@@ -30,19 +30,15 @@ const MealPlanner = () => {
       }
       try {
         setLoading(true);
-
-        // Get or create planner
         const pRes = await fetch(`${API_BASE}/plannerRecipe/byUser/${userId}`);
         if (!pRes.ok) throw new Error("Failed to load your planner");
         const { id } = await pRes.json();
         setPlannerId(id);
 
-        //Load all recipes
         const rRes = await fetch(`${API_BASE}/recipe`);
         if (!rRes.ok) throw new Error("Failed to load recipes");
         setRecipes(await rRes.json());
 
-        //Load existing planned recipes
         const prRes = await fetch(`${API_BASE}/plannerRecipe/${id}`);
         if (!prRes.ok) throw new Error("Failed to load planned recipes");
         setPlannedRecipes(await prRes.json());
